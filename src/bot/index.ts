@@ -1,9 +1,9 @@
 import { Client, GatewayIntentBits, REST, Routes, SlashCommandBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle, ModalBuilder, TextInputBuilder, TextInputStyle, ChannelType, PermissionsBitField, TextChannel } from 'discord.js';
-import { Player } from '../models/Player';
-import { Guild } from '../models/Guild';
-import { Config } from '../models/Config';
-import { PreApproval } from '../models/PreApproval';
-import { broadcastToPlugin } from '../ws';
+import { Player } from '../models/Player.ts';
+import { Guild } from '../models/Guild.ts';
+import { Config } from '../models/Config.ts';
+import { PreApproval } from '../models/PreApproval.ts';
+import { broadcastToPlugin } from '../ws/index.ts';
 
 const OWNER_ID = '1319539205885526018';
 const SERVER_ID = '1477359416562028670';
