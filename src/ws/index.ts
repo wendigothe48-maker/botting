@@ -1,7 +1,7 @@
 import { WebSocket } from 'ws';
-import { Player } from '../models/Player';
-import { Guild } from '../models/Guild';
-import { PreApproval } from '../models/PreApproval';
+import { Player } from '../models/Player.ts';
+import { Guild } from '../models/Guild.ts';
+import { PreApproval } from '../models/PreApproval.ts';
 
 const clients = new Set<WebSocket>();
 

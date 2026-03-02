@@ -4,8 +4,8 @@ import { WebSocketServer } from 'ws';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import cors from 'cors';
-import { initBot } from './bot';
-import { handleWsConnection } from './ws';
+import { initBot } from './src/bot/index.ts';
+import { handleWsConnection } from './src/ws/index.ts';
 import { createServer as createViteServer } from 'vite';
 
 dotenv.config();
